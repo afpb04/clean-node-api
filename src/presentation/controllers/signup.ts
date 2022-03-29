@@ -1,8 +1,11 @@
 import { badRequest, serverError } from '../../helpers/http-helpers';
 import { InvalidParamError, MissingParamError } from '../errors';
-import { IController } from '../protocols/controllers';
-import { IEmailValidation } from '../protocols/email-validation';
-import { IHttpRequest, IHttpResponse } from '../protocols/http';
+import {
+  IController,
+  IEmailValidation,
+  IHttpRequest,
+  IHttpResponse,
+} from '../protocols';
 
 export class SignUpController implements IController {
   private readonly emailValidation: IEmailValidation;
