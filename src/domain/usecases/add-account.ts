@@ -6,5 +6,5 @@ export interface IAddAccountModel {
   password: string;
 }
 export interface IAddAccount {
-  add({ name, email, password }: IAddAccountModel): IAccountModel;
+  add({ name, email, password }: IAddAccountModel): Promise<IAccountModel>;
 }
