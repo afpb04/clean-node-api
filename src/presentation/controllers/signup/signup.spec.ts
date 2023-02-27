@@ -1,6 +1,3 @@
-import { rejects } from 'assert';
-import { resolve } from 'path';
-
 import {
   InvalidParamError,
   MissingParamError,
